@@ -2,7 +2,7 @@ var formulario = document.querySelector("form") // aqui no era con el #, despues
 
 formulario.onsubmit = function(e) {
 
-  e.prevent(); 
+  e.preventDefault(); // si era preventDefault 
   
   var n = formulario.elements[0]
   var e = formulario.elements[1]
@@ -13,7 +13,7 @@ formulario.onsubmit = function(e) {
 
   var i = na.selectedIndex
   var nacionalidad = na.options[i].value
-  console.log(nombre, edad)
+  console.log(nombre,edad)
   console.log(nacionalidad)
 
   if (nombre.length === 0) {
@@ -68,7 +68,7 @@ elementoLista.appendChild(spanNombre)
 elementoLista.appendChild(inputNombre)
 elementoLista.appendChild(espacio)
 
-function crearElemento(descripcion, valor) {
+/* function crearElemento(descripcion, valor) {
   var spanNombre = document.createElement("span")
   var inputNombre = document.createElement("input")
   var espacio = document.createElement("br")
@@ -94,5 +94,5 @@ elementoLista.appendChild(botonBorrar);
  botonBorrar.onclick = function() {
 // this.parentNode.style.display = 'none';
 botonBorrar.parentNode.remove()
-  }
+  } */
 }
