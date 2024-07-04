@@ -68,7 +68,7 @@ elementoLista.appendChild(spanNombre)
 elementoLista.appendChild(inputNombre)
 elementoLista.appendChild(espacio)
 
-/* function crearElemento(descripcion, valor) {
+function crearElemento(descripcion, valor) {
   var spanNombre = document.createElement("span")
   var inputNombre = document.createElement("input")
   var espacio = document.createElement("br")
@@ -94,5 +94,5 @@ elementoLista.appendChild(botonBorrar);
  botonBorrar.onclick = function() {
 // this.parentNode.style.display = 'none';
 botonBorrar.parentNode.remove()
-  } */
+  }
 }
